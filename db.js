@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const port = process.env.PORT || 8080;
-//console.log('Port :', mongoosURL);
+//console.log('Port :', port);
 mongoosURL = 'mongodb+srv://deepikasahu:deepikas2212@job.if9dp.mongodb.net/'; //process.env.MONGODB_URL;  //hosted DB on mongoDB atlas to access publically 24x7.
 console.log('MONGO_URI:', mongoosURL);
 mongoose.connect(mongoosURL, {
